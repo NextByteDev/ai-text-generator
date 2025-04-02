@@ -1,18 +1,24 @@
-import openai  
-
-# Set your OpenAI API key
-openai.api_key = "your_api_key_here"
+import random
 
 def generate_text(prompt):
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "system", "content": "You are a helpful assistant."},
-                  {"role": "user", "content": prompt}]
-    )
-    return response["choices"][0]["message"]["content"]
+    """Simulates an AI text generator without using an API."""
+    
+    responses = {
+        "hello": ["Hello! How can I assist you today?", "Hi there! What’s on your mind?"],
+        "ai": ["AI is transforming the world! What interests you about AI?", "AI is amazing! Are you working on any AI projects?"],
+        "python": ["Python is a great choice for AI and automation!", "Python makes AI development easy and fun!"],
+        "default": ["That's interesting! Tell me more.", "I’d love to hear more about that!"]
+    }
 
-# Example usage
+    # Find a response based on keyword matching
+    for key in responses:
+        if key in prompt.lower():
+            return random.choice(responses[key])
+    
+    # If no keywords match, return a default response
+    return random.choice(responses["default"])
+
 if __name__ == "__main__":
     user_prompt = input("Enter a prompt: ")
     generated_text = generate_text(user_prompt)
-    print("\nAI Response:\n", generated_text)
+    print("AI:", generated_text)
