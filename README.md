@@ -26,38 +26,38 @@ This is a simple AI-powered text generator that uses GPT-2 to generate dynamic r
 
 ### 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ai-text-generator.git
+   git clone https://github.com/DeepSynthAI/ai-text-generator.git
    cd ai-text-generator
    ```
 
 ### 2. Install the required dependencies:
-        Make sure Python 3.7 or higher is installed, then use pip to install the required libraries:
+Make sure Python 3.7 or higher is installed, then use pip to install the required libraries:
    ```bash
    pip install transformers torch
    ```
 
 ### 3. Run the script:
-        After installing the dependencies, run the Python script:
+After installing the dependencies, run the Python script:
    ```bash
    python text_generator.py
    ```
 
 ### 4. **Start interacting with the AI**:
    - Type in prompts like "hello", "tell me a joke", or "how are you" and see how the AI responds.
-   - To stop the interaction, simply type ```bash exit
+   - To stop the interaction, simply type ```bash 
+   exit 
    ```
 
 ## Example Usage 💬
    ```bash
-   You: Tell me a joke
-AI: Why don’t skeletons fight each other? They don’t have the guts!
+    You: Tell me a joke
+    AI: Why don’t skeletons fight each other? They don’t have the guts!
 
-You: How are you?
-AI: I'm doing great, thanks for asking!
+    You: How are you?
+    AI: I'm doing great, thanks for asking!
 
-You: Tell me something about AI
-AI: AI is transforming the world! It is making huge strides in industries like healthcare, finance, and more.
-
+    You: Tell me something about AI
+    AI: AI is transforming the world! It is making huge strides in industries like healthcare, finance, and more.
    ```
 
 ## Future Improvements 🚀
