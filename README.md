@@ -44,7 +44,7 @@ After installing the dependencies, run the Python script:
 
 ### 4. **Start interacting with the AI**:
    - Type in prompts like "hello", "tell me a joke", or "how are you" and see how the AI responds.
-   - To stop the interaction, simply type exit
+   - To stop the interaction, simply type `exit`
 
 ## Example Usage 💬
    ```bash
