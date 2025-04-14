@@ -26,7 +26,7 @@ This is a simple AI-powered text generator that uses GPT-2 to generate dynamic r
 
 ### 1. Clone the repository:
    ```bash
-   git clone https://github.com/DeepSynthAI/ai-text-generator.git
+   git clone https://github.com/your-username/ai-text-generator.git
    cd ai-text-generator
    ```
 
